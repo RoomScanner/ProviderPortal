@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: API contract (shared with Customer Portal)
+    url: https://github.com/RoomScanner
+    about: Contract changes go to the squad's API contract repository.

@@ -1,0 +1,38 @@
+name: Sprint review and retrospective
+description: Held at the end of every sprint
+title: "Sprint N review and retro"
+labels: ["type: meeting"]
+body:
+  - type: input
+    id: sprint
+    attributes:
+      label: Sprint and dates
+    validations:
+      required: true
+  - type: textarea
+    id: demo
+    attributes:
+      label: Completed and demonstrated
+      description: Link the issues
+    validations:
+      required: true
+  - type: textarea
+    id: not-done
+    attributes:
+      label: Not finished, and why
+  - type: textarea
+    id: good
+    attributes:
+      label: What worked
+  - type: textarea
+    id: bad
+    attributes:
+      label: What got in the way
+  - type: textarea
+    id: risks
+    attributes:
+      label: Risks
+  - type: textarea
+    id: changes
+    attributes:
+      label: Changes for next sprint

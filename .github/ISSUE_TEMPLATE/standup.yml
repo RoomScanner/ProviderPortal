@@ -1,0 +1,59 @@
+name: Stand-up minutes
+description: Upload within 24 hours of the meeting (at least two per week)
+title: "Stand-up YYYY-MM-DD"
+labels: ["type: meeting"]
+body:
+  - type: input
+    id: date
+    attributes:
+      label: Date and time
+    validations:
+      required: true
+  - type: input
+    id: attendees
+    attributes:
+      label: Attendees
+      description: Note anyone absent
+    validations:
+      required: true
+  - type: textarea
+    id: members
+    attributes:
+      label: Updates per member
+      description: Every member needs did, doing and blocked. Link issues by number.
+      value: |
+        ### Member 1
+        - Did:
+        - Doing:
+        - Blocked:
+
+        ### Member 2
+        - Did:
+        - Doing:
+        - Blocked:
+
+        ### Member 3
+        - Did:
+        - Doing:
+        - Blocked:
+
+        ### Member 4
+        - Did:
+        - Doing:
+        - Blocked:
+
+        ### Member 5
+        - Did:
+        - Doing:
+        - Blocked:
+    validations:
+      required: true
+  - type: textarea
+    id: partner
+    attributes:
+      label: Waiting on Customer Portal
+      description: Anything blocked by the partner team, and who is waiting
+  - type: textarea
+    id: actions
+    attributes:
+      label: Action items

@@ -1,0 +1,42 @@
+name: Task
+description: A feature, design, report or technical task
+labels: ["type: task"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Before moving this out of Product Backlog, set an **assignee**, and on the board set **Estimate**, **Due date**, **Reviewer** and **Sprint**.
+  - type: input
+    id: requirements
+    attributes:
+      label: Requirement IDs
+      description: SRS or common-requirement IDs this task covers
+      placeholder: PP-REG-S01, PP-REG-S02, ARCH-D01
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: What needs doing
+    validations:
+      required: true
+  - type: textarea
+    id: dod
+    attributes:
+      label: Definition of Done
+      description: Tick every box before moving to Done. Add or remove items to fit the task.
+      value: |
+        - [ ] Meets the requirement IDs above
+        - [ ] Tested (unit tests or manual test steps below)
+        - [ ] Reviewed by the assigned reviewer, every comment answered
+        - [ ] Merged to main and checked in staging
+        - [ ] Included in the Docker deployment (Milestone 2 only)
+        - [ ] Docs / API contract updated if behaviour changed
+    validations:
+      required: true
+  - type: textarea
+    id: review
+    attributes:
+      label: Review log
+      description: The owner records how each piece of reviewer feedback was handled.
+      placeholder: "- Reviewer: ... / Fix: ..."
