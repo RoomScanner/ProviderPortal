@@ -11,7 +11,7 @@ Every piece of work, including design, reports and meetings, is an issue on the 
 | Product Backlog | Every known feature, fix and technical task. Keep it prioritized. |
 | Sprint Backlog | Picked for this sprint. From here on the task **must** have an assignee, a due date, an estimate and a Definition of Done checklist. |
 | In Progress | Work has started. Comment on the issue if something will make it late. |
-| Review | Done by the owner and waiting for the reviewer. Set the Reviewer field. The owner replies to each piece of feedback on the issue or PR before moving on. |
+| Review | Done by the owner and waiting for the reviewer. Set the Assigned reviewer field. The owner replies to each piece of feedback on the issue or PR before moving on. |
 | Staging | Reviewed and merged. Check that it works with the rest of the subsystem and with Customer Portal. |
 | Deployment | Running in the Docker deployment on the target machine. Skip for Milestone 1. |
 | Done | Every Definition of Done box is ticked. |
@@ -22,9 +22,9 @@ Don't skip stages. A task that jumps straight to Done, or reaches Done with unti
 ### Board fields
 
 - **Status**: the stage above.
-- **Estimate**: effort in hours.
+- **Estimate (h)**: effort in hours.
 - **Due date**: the target date.
-- **Reviewer**: the GitHub username of the person reviewing. It must be someone other than the owner.
+- **Assigned reviewer**: the GitHub username of the person reviewing. It must be someone other than the owner.
 - **Sprint**: the two-week sprint the task belongs to.
 - **Priority**: P0 (blocking) to P2 (nice to have).
 - **Level**: Simplex, Medium or Ultimo, for feature tasks.
@@ -63,7 +63,7 @@ Commit with the GitHub account listed in the README so your work is counted.
 ## Pull requests
 
 1. Link the issue with `Closes #<number>`.
-2. Request a review from the issue's Reviewer.
+2. Request a review from the issue's Assigned reviewer.
 3. The reviewer leaves comments, and the owner answers each one, either with a change or a reason. This answer is the evidence for TW-M02.
 4. Merge after approval and move the issue to Staging.
 

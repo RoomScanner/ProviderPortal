@@ -5,7 +5,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Before moving this out of Product Backlog, set an **assignee**, and on the board set **Estimate**, **Due date**, **Reviewer** and **Sprint**.
+        Before moving this out of Product Backlog, set an **assignee**, and on the board set **Estimate (h)**, **Due date**, **Assigned reviewer** and **Sprint**.
   - type: input
     id: requirements
     attributes:
