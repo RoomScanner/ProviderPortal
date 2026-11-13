@@ -1,6 +1,6 @@
 # API notes
 
-The API contract itself lives in the squad's shared contract repository in the RoomScanner organization (TW-S06), not here. Use this folder for working notes before they go into the contract.
+The API contract itself lives in [RoomScanner/Docs](https://github.com/RoomScanner/Docs/tree/main/api-contract) (TW-S06), not here. Use this folder for working notes before they go into the contract.
 
 Each endpoint in the contract needs:
 
