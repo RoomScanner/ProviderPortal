@@ -5,7 +5,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Before moving this out of Product Backlog, set an **assignee**, and on the board set **Estimate (h)**, **Due date**, **Assigned reviewer** and **Sprint**.
+        Create tasks as a **sub-issue of an epic** (open the epic, then Create sub-issue). Before moving this out of Product Backlog, set an **assignee**, and on the board set **Estimate (h)**, **Due date**, **Assigned reviewer** and **Sprint**.
   - type: input
     id: requirements
     attributes:
