@@ -19,6 +19,16 @@ Every piece of work, including design, reports and meetings, is an issue on the 
 
 Don't skip stages. A task that jumps straight to Done, or reaches Done with unticked boxes, counts as invalid, and invalid tasks must stay under 10% of everything moved to Done (TW-U02). The same 10% check applies to missing assignees, due dates and estimates.
 
+### Epics and sub-issues
+
+The backlog holds **epics**, not small tasks. An epic (label `type: epic`) is a big piece of work, like "Data model" or "Bookings and payments". Its Scope checklist lists what has to be delivered.
+
+At sprint planning, break the part of an epic you'll do this sprint into small tasks. Open the epic and use **Create sub-issue** with the Task template, so the task is linked to its epic and the epic shows progress. Each sub-issue should take no more than a few days and have one owner.
+
+- Sub-issues follow every stage above and need an assignee, due date, estimate, reviewer and Definition of Done.
+- Epics have no sprint, estimate or reviewer. Move an epic to In Progress when its first sub-issue starts, and to Done only when every sub-issue is Done and every Scope line is ticked.
+- To add an epic for new work, use the Epic template.
+
 ### Board fields
 
 - **Status**: the stage above.

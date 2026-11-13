@@ -1,0 +1,35 @@
+name: Epic
+description: A big piece of work, broken into sub-issues at sprint planning
+title: "Epic: "
+labels: ["type: epic"]
+body:
+  - type: textarea
+    id: goal
+    attributes:
+      label: Goal
+      description: What is true when this epic is finished?
+    validations:
+      required: true
+  - type: input
+    id: requirements
+    attributes:
+      label: Requirement IDs
+      placeholder: PP-ROOM-S01–S06, PP-SEARCH-S01–S03
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope
+      description: One line per deliverable. Each line becomes one or more sub-issues (Create sub-issue on this epic, with the Task template).
+      value: |
+        - [ ]
+        - [ ]
+    validations:
+      required: true
+  - type: textarea
+    id: done
+    attributes:
+      label: Epic is done when
+    validations:
+      required: true
