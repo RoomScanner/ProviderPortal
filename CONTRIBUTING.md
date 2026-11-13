@@ -39,14 +39,19 @@ At the end of each two-week sprint, open a **Sprint review** issue covering what
 
 ## Branches
 
-`main` is protected. Branch from it and open a pull request.
+`main` is protected: nobody can push to it directly, including admins. Branch from it and open a pull request.
 
 ```
 feat/<issue-number>-short-name     e.g. feat/12-provider-registration
 fix/<issue-number>-short-name
 docs/<issue-number>-short-name     e.g. docs/5-erd-v1
 chore/<issue-number>-short-name
+refactor/<issue-number>-short-name
+test/<issue-number>-short-name
+ci/<issue-number>-short-name
 ```
+
+Lowercase letters, digits and hyphens only. A `branch-name` check runs on every PR and fails if the name doesn't match, and a failing check blocks the merge. Create the issue first so you have its number.
 
 ## Commits
 
@@ -65,7 +70,10 @@ Commit with the GitHub account listed in the README so your work is counted.
 1. Link the issue with `Closes #<number>`.
 2. Request a review from the issue's Assigned reviewer.
 3. The reviewer leaves comments, and the owner answers each one, either with a change or a reason. This answer is the evidence for TW-M02.
-4. Merge after approval and move the issue to Staging.
+4. Once the PR has 1 approval, every review thread is resolved and checks pass, **squash merge** it. Squash is the only merge method enabled. The PR title becomes the commit message on `main`, so write it as a Conventional Commit. The branch is deleted automatically.
+5. Move the issue to Staging.
+
+A new push after an approval dismisses that approval, so the reviewer has to look again.
 
 ## Definition of Done
 
