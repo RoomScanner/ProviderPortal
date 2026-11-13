@@ -2,10 +2,6 @@
 
 The API contract itself lives in [RoomScanner/Docs](https://github.com/RoomScanner/Docs/tree/main/api-contract) (TW-S06), not here. Use this folder for working notes before they go into the contract.
 
-Each endpoint in the contract needs:
-
-- Endpoint, protocol (REST, Socket or Kafka) and a short description (Simplex)
-- JSON request and response structures with field types (Medium, TW-M01)
-- An example JSON object for each request and response (Ultimo, TW-U04)
+Every contract document must follow the format in [`api-contract/_TEMPLATE.md`](https://github.com/RoomScanner/Docs/blob/main/api-contract/_TEMPLATE.md). A `contract-format` check in the Docs repo blocks PRs that don't. Each endpoint gets a numbered heading, a protocol and requirement-ID table, a JSON example and a field table for every request and response, and a response-code table. That covers the Simplex, Medium and Ultimo contract requirements (TW-S06, TW-M01, TW-U04) together.
 
 Contract due dates: Fri 20 Nov 2026 for Milestone 1, and Fri 1 Jan 2027 for Milestone 2.
